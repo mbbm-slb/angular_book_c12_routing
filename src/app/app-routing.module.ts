@@ -9,9 +9,12 @@ import { UserAddComponent } from './user-add/user-add.component';
 
 const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
-  { path: 'user-entry', component: UserEntryComponent },
-  { path: 'user-list', component: UserListComponent },
-  { path: 'user-add', component: UserAddComponent },
+  { path: 'user-entry', component: UserEntryComponent, 
+    children: [
+      { path: 'user-list', component: UserListComponent },
+      { path: 'user-add', component: UserAddComponent },
+    ]
+  },
 ];
 
 @NgModule({
