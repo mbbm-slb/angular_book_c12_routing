@@ -1,7 +1,7 @@
-<nav>
+<nav routerLinkActive="active">
     <!-- absolute path -->
     <a routerLink="user-list" routerLinkActive="active">User-List (abs.)</a>
-    <a routerLink="user-add" routerLinkActive="active">User-Add (abs.)</a>
+    <a routerLink="user-add" [routerLinkActive]="['active']">User-Add (abs.)</a>
     <!-- relative path to user-entry component -->
     <a routerLink="user-list" routerLinkActive="active">User-List (rel)</a>
     <a routerLink="user-add" routerLinkActive="active">User-Add (rel)</a>
