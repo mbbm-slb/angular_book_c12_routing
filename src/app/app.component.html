@@ -1,6 +1,7 @@
 <nav>
     <a routerLink="/settings" routerLinkActive="active">Settings</a>
     <a routerLink="/user-entry" routerLinkActive="active">User</a>
+    <a routerLink="/" [routerLinkActive]="['active', 'highlighted']" [routerLinkActiveOptions]="{ exact: true }">Back to root</a>
 </nav>
 <h1>Demo-Routing</h1>
 <router-outlet></router-outlet>
