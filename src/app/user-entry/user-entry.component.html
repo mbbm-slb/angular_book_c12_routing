@@ -1,6 +1,10 @@
 <nav>
-    <a routerLink="/user-entry/user-list" routerLinkActive="active">User-List</a>
-    <a routerLink="/user-entry/user-add" routerLinkActive="active">User-Add</a>
+    <!-- absolute path -->
+    <a routerLink="user-list" routerLinkActive="active">User-List (abs.)</a>
+    <a routerLink="user-add" routerLinkActive="active">User-Add (abs.)</a>
+    <!-- relative path to user-entry component -->
+    <a routerLink="user-list" routerLinkActive="active">User-List (rel)</a>
+    <a routerLink="user-add" routerLinkActive="active">User-Add (rel)</a>
 </nav>
 <h2>user area</h2>
 <router-outlet></router-outlet>
