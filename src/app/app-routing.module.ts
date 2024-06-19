@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'user-entry', component: UserEntryComponent, 
     children: [
+      { path: '', redirectTo: 'user-list', pathMatch: 'full' },
       { path: 'user-list', component: UserListComponent },
       { path: 'user-add', component: UserAddComponent },
     ]
