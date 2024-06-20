@@ -8,12 +8,12 @@ import { UserAddComponent } from './user-add/user-add.component';
 
 
 const routes: Routes = [
-  { path: 'settings', component: SettingsComponent },
-  { path: 'user-entry', component: UserEntryComponent, 
+  { path: 'settings', component: SettingsComponent, title: 'Settings' },
+  { path: 'user-entry', component: UserEntryComponent, title: 'User Entry',
     children: [
       //{ path: '', redirectTo: 'user-list', pathMatch: 'full' },
       { path: 'user-list', component: UserListComponent },
-      { path: 'user-add', component: UserAddComponent },
+      { path: 'user-add', component: UserAddComponent},
     ]
   },
 ];
